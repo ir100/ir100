@@ -8,7 +8,7 @@
   "features": {
     "ghcr.io/devcontainers-contrib/features/poetry:2": {}
   },
-  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "/bin/sh ./.devcontainer/postCreateCommand.sh",
   "mounts": [
     "source=venv-${devcontainerId},target=${containerWorkspaceFolder}/.venv,type=volume",
     "source=esci-data-${devcontainerId},target=${containerWorkspaceFolder}/esci-data,type=volume"
