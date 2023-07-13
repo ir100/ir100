@@ -8,6 +8,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pandas = "^2.0.3"
+datasets = "^2.13.1"
+ipykernel = "^6.24.0"
 
 
 [build-system]

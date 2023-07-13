@@ -30,7 +30,8 @@
         "esbenp.prettier-vscode",
         "ms-python.python",
         "njpwerner.autodocstring",
-        "KevinRose.vsc-python-indent"
+        "KevinRose.vsc-python-indent",
+        "ms-toolsai.jupyter"
       ]
     }
   }
