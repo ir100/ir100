@@ -1,0 +1,37 @@
+{
+  "name": "ir100-dev-con-python",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+  "containerEnv": {
+    "TZ": "Asia/Tokyo"
+  },
+  "runArgs": ["--init"],
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {}
+  },
+  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  "mounts": [
+    "source=venv-${devcontainerId},target=${containerWorkspaceFolder}/.venv,type=volume",
+    "source=esci-data-${devcontainerId},target=${containerWorkspaceFolder}/esci-data,type=volume"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.renderWhitespace": "all",
+        "python.defaultInterpreterPath": ".venv/bin/python",
+        "[json][jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": true
+          }
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "ms-python.python",
+        "njpwerner.autodocstring",
+        "KevinRose.vsc-python-indent"
+      ]
+    }
+  }
+}
