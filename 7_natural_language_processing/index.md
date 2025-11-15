@@ -26,9 +26,9 @@ Porter stemmerの実装を入手し、各単語に適用せよ。
 
 Unicodeにおける記号 (punctuation) の定義を調べ、記号区切りで単語に分割せよ。
 
-## 5. Unicode Text Segmentation
+## 5. BERT Tokenizer
 
-Unicode text segmentationの実装を入手し、これを用いて単語に分割せよ。
+いわゆる事前学習済みモデルを適当に入手し、そのトークナイザを用いてトークンに分割せよ。
 
 ## 6. 形態素解析
 

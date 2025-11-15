@@ -52,9 +52,9 @@ XGBoostと訓練データを用いて、`2.` で得られた特徴量を入力�
 ## 8. BERT
 
 ロジスティック回帰の代わりにBERTを用いて `3.` を行え。
-ただし入力は特徴量ではなく、`query` と `product_title` そのものを、スペースでトークンに区切って与えよ。
+ただし入力は特徴量ではなく、`query` と `product_title` そのものを与えよ。
 
-## 9. Siamese BERT
+## 9. Sentence-BERT
 
 `query` を受け取ってから `query` と全ての `product_title` をBERTに入力すると、検索エンジンとしては実用的な時間で動作しないと考えられる。
-そこで、siamese BERTを用いて前問を解け。
+そこで、Sentence-BERTを用いて前問を解け。
