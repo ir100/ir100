@@ -1,4 +1,4 @@
-# 情報検索100本ノック
+# 情報検索100本ノック 1.1
 
 （想定言語：Python）
 
@@ -12,3 +12,10 @@
 7. [自然言語処理](7_natural_language_processing/index.md)
 8. [インデックスのライフサイクル](8_lifecycle_of_indices/index.md)
 9. [シャーディングとレプリケーション](9_sharding_and_replication/index.md)
+
+
+## リリースノート
+
+### 1.1
+
+あまり一般的ではない処理と言い回しを変更しました。
